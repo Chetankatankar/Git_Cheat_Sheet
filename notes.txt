@@ -3,6 +3,11 @@
 3. git commit -m 'notes.txt'
 4. git push origin main
 
+when file added new code 
+5. git pull origin main --rebase
+   git push -m 'notes.txt'
+   git push origin main
+
 # afte that check status
-5. git status
+6. git status
    - nothing to commit, working tree clean
