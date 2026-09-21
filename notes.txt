@@ -1,1 +1,8 @@
 1. git clone {url}
+2. git add notes.txt
+3. git commit -m 'notes.txt'
+4. git push origin main
+
+# afte that check status
+5. git status
+   - nothing to commit, working tree clean
