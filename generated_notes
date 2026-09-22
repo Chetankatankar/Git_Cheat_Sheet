@@ -1,0 +1,24 @@
+DAILY GIT WORKFLOW
+
+For normal daily development:
+
+
+git status
+
+↓
+
+
+git add .
+
+↓
+
+
+git commit -m "Your message"
+
+↓
+
+
+git push
+
+
+That's the most important Git workflow.

@@ -1,0 +1,165 @@
+GIT COMMANDS - CONCISE NOTES
+
+1. git init
+
+Meaning: Creates a new Git repository in the current folder.
+When to use: Once, when starting Git tracking on a normal (non-Git) project.
+Example:
+cd my_project
+git init
+
+
+2. git clone
+
+Meaning: Downloads an existing remote repository to your computer.
+When to use: The first time you get a project that already exists on GitHub.
+Example:
+git clone https://github.com/user/project.git
+
+
+3. git status
+
+Meaning: Shows the current state of your working directory and staging area.
+When to use: Very frequently - to check what has changed / staged.
+Example:
+git status
+Output: modified: views.py
+
+
+4. git add
+
+Meaning: Moves changed/new files into the staging area.
+When to use: Before committing, to select what goes into the next commit.
+Example:
+git add .
+git add views.py
+
+
+5. git commit
+
+Meaning: Saves the staged changes into the local repository.
+When to use: After staging, to record a version of your work locally (does not send to GitHub).
+Example:
+git commit -m "Added login API"
+
+
+6. git push
+
+Meaning: Sends local committed changes to the remote GitHub repository.
+When to use: After committing, to publish your changes to GitHub.
+Example:
+git push
+
+
+7. git pull
+
+Meaning: Downloads remote changes and merges them into your current branch.
+When to use: When GitHub has newer changes than your local copy (e.g., teammate pushed).
+Example:
+git pull
+
+
+8. git fetch
+
+Meaning: Downloads remote commit info WITHOUT merging into your current branch.
+When to use: When you want to inspect remote updates before integrating them.
+Example:
+git fetch
+
+
+9. git log
+
+Meaning: Shows commit history.
+When to use: To review past commits.
+Example:
+git log --oneline
+Output:
+abc123 Added login API
+def456 Created user model
+
+
+10. git branch
+
+Meaning: Lists branches in the repository.
+When to use: To see available branches and which one is active.
+Example:
+git branch
+Output: * main, development
+
+
+11. git switch
+
+Meaning: Moves between branches (or creates a new one).
+When to use: To change your working branch.
+Example:
+git switch development
+git switch -c feature-login   (create + switch)
+
+
+12. git merge
+
+Meaning: Combines changes from one branch into the current branch.
+When to use: To integrate a feature branch into main (or another branch).
+Example:
+git switch main
+git merge feature-login
+
+
+13. git remote
+
+Meaning: Shows connections between your local repo and remote repositories.
+When to use: To check your GitHub connection (URL, name).
+Example:
+git remote -v
+Output: origin  https://github.com/user/project.git (fetch/push)
+
+
+14. git remote add origin
+
+Meaning: Connects a local repository to a remote GitHub repository.
+When to use: Once, for a new local repo that isn't linked to GitHub yet.
+Example:
+git remote add origin https://github.com/user/project.git
+
+
+15. git restore
+
+Meaning: Discards unstaged changes and restores a file to its last committed version.
+When to use: To undo unwanted local file edits (be careful - changes are lost).
+Example:
+git restore views.py
+
+
+16. git stash
+
+Meaning: Temporarily saves unfinished changes without committing them.
+When to use: When you need to switch branches/tasks but aren't ready to commit.
+Example:
+git stash
+git stash pop   (bring changes back later)
+
+
+17. git revert
+
+Meaning: Creates a new commit that undoes the effect of a previous commit.
+When to use: To safely undo a commit that has already been pushed/shared.
+Example:
+git revert <commit-id>
+
+
+18. git reset
+
+Meaning: Moves the branch/HEAD backward; can change staged/committed state depending on option used.
+When to use: Advanced local history management - use carefully as it can rewrite history.
+Example:
+git reset --soft HEAD~1
+
+
+CORE DAILY WORKFLOW
+
+git status -> git diff -> git add . -> git commit -m "message" -> git push
+
+
+MASTER THESE FIRST
+
+git clone, git status, git add, git commit, git push, git pull, git diff, git branch, git switch, git merge
