@@ -1,3 +1,5 @@
+Git bash here!!!!!!!!!!!
+
 1. git clone {url}
 2. git add notes.txt
 3. git commit -m 'notes.txt'
@@ -11,3 +13,28 @@ when file added new code
 # afte that check status
 6. git status
    - nothing to commit, working tree clean
+
+
+##############  Important Note: ##############################################################
+
+When we have many files with folders at that time we can not add one single single file okay so for that we do -
+
+1. git clone {url}
+2. git add . 
+3. git commit -m 'initial commit'
+4. git push -u origin main
+
+
+Project files
+     ↓
+git init
+     ↓
+git add .
+     ↓
+git commit
+     ↓
+git remote add origin
+     ↓
+git push
+     ↓
+GitHub
