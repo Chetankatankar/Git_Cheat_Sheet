@@ -6,4 +6,4 @@
 
 Short version:
 
- **A practical Git Cheat Sheet with essential commands and examples for everyday development.**
+ A practical Git Cheat Sheet with essential commands and examples for everyday development.
