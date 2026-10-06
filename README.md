@@ -1,7 +1,6 @@
-# Git_Cheat_Sheet
+# Git Cheat Sheet
 
- A beginner-friendly Git Cheat Sheet containing essential Git commands, concepts, workflows, and practical examples for learning and daily development.
+A beginner-friendly Git Cheat Sheet covering essential Git commands, concepts, common workflows, and practical examples for everyday software development.
 
-Short version:
-
- A practical Git Cheat Sheet with essential commands and examples for everyday development.
+**Short description:**
+A practical Git reference guide with essential commands and examples for daily development.
