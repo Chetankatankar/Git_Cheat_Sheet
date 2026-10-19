@@ -4,3 +4,4 @@ A beginner-friendly Git Cheat Sheet covering essential Git commands, concepts, c
 
 Short description:
 A practical Git reference guide with essential commands and examples for daily development.
+d
